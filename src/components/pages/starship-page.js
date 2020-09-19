@@ -5,8 +5,7 @@ import { withRouter } from 'react-router-dom';
 const StarshipPage = ({ history }) => {
     return (
         <StarshipList onItemSelected={(itemId) => {
-            const newPath = `starships/${itemId}`;
-            history.push(newPath);
+            history.push(itemId);
         }}/>
     ); 
 };
